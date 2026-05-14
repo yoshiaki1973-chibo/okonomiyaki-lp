@@ -510,6 +510,25 @@
     .illust-row, .illust-row.reverse { flex-direction: column; }
     .illust-img { flex: 0 0 auto; width: 180px; margin: 0 auto; }
     .expo-inner { flex-direction: column; }
+
+    /* プランカード スマホ対応 */
+    .plan-card { flex-direction: column; }
+    .plan-card-right {
+      flex: none;
+      width: 100%;
+      border-left: none;
+      border-top: 1px solid rgba(232,169,106,0.15);
+      flex-direction: row;
+      justify-content: center;
+      gap: 20px;
+      padding: 16px 20px;
+    }
+    .plan-card-right img { width: 90px; }
+    .plan-card-right-label { text-align: left; }
+    .plan-card-right-sub { text-align: left; }
+    .plan-item { flex-direction: column; gap: 4px; }
+    .plan-item-label { flex: none; }
+    .plan-price { font-size: 32px; }
   }
 </style>
 </head>
