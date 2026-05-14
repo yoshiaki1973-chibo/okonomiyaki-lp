@@ -375,6 +375,20 @@
   .gallery-item { border-radius: 6px; overflow: hidden; aspect-ratio: 3/4; }
   .gallery-item img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.4s; }
   .gallery-item:hover img { transform: scale(1.06); }
+  .photo-caption {
+    font-size: 11px;
+    color: var(--text-light);
+    text-align: center;
+    margin-top: 10px;
+    letter-spacing: 0.03em;
+  }
+  .mayteko-img {
+    width: 100%;
+    max-width: 220px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 8px;
+  }
 
   /* ===== ACCESS ===== */
   .access-section { background: var(--white); }
@@ -568,7 +582,7 @@
 </div>
 
 <!-- PHOTO GRID -->
-<div style="padding: 6px; background: var(--brown-deep);">
+<div style="padding: 6px 6px 0; background: var(--brown-deep);">
   <div class="photo-grid">
     <div class="photo-item tall">
       <img src="images/demo1.jpg" alt="講師によるデモンストレーション">
@@ -586,6 +600,7 @@
       <img src="images/tongs.jpg" alt="具材を乗せる様子">
     </div>
   </div>
+  <p style="font-size:11px; color:rgba(255,255,255,0.45); text-align:center; padding: 10px 0 8px; letter-spacing:0.03em;">※写真は万博会場での写真です。実際の体験教室の現場とは内装が違います。</p>
 </div>
 
 <!-- ABOUT / FEATURES -->
@@ -666,7 +681,7 @@
           <div class="step-body">
             <div class="step-title">準備・説明</div>
             <div class="step-desc">エプロン着用、手洗い、鉄板の安全な使い方や食材と道具に触れていただきます。</div>
-            <span class="step-tag">アレルギー・食事制限はこの時点で確認</span>
+            <span class="step-tag">アレルギー・食事制限はこの時点で最終確認（ご予約時点での事前確認も承ります）</span>
           </div>
         </div>
         <div class="step-item">
@@ -688,6 +703,7 @@
           <div class="step-body">
             <div class="step-title">クロージング・お土産</div>
             <div class="step-desc">「お好み焼きマスター認定証」授与で達成感を演出。記念撮影後、オリジナルお土産をお渡しします。</div>
+            <span class="step-tag">撮影は体験開始後から随時OK・全体集合撮影はケースによります</span>
           </div>
         </div>
       </div>
@@ -719,7 +735,7 @@
           </div>
           <div class="plan-item">
             <div class="plan-item-label">お土産</div>
-            <div class="plan-item-val">千房オリジナル 銀のマイテコ</div>
+            <img src="images/mayteko.png" class="mayteko-img" alt="千房オリジナル 銀のマイテコ">
           </div>
         </div>
       </div>
@@ -741,7 +757,7 @@
           </div>
           <div class="plan-item">
             <div class="plan-item-label">お土産</div>
-            <div class="plan-item-val">千房オリジナル 銀のマイテコ</div>
+            <img src="images/mayteko.png" class="mayteko-img" alt="千房オリジナル 銀のマイテコ">
           </div>
         </div>
       </div>
@@ -762,7 +778,7 @@
           </div>
           <div class="plan-item">
             <div class="plan-item-label">お土産</div>
-            <div class="plan-item-val">千房オリジナル 銀のマイテコ</div>
+            <img src="images/mayteko.png" class="mayteko-img" alt="千房オリジナル 銀のマイテコ">
           </div>
         </div>
       </div>
@@ -799,6 +815,7 @@
       <div class="gallery-item"><img src="images/tongs.jpg" alt="具材を乗せる"></div>
       <div class="gallery-item"><img src="images/demo2.jpg" alt="スタッフによるサポート"></div>
     </div>
+    <p class="photo-caption">※写真は万博会場での写真です。実際の体験教室の現場とは内装が違います。</p>
   </div>
 </section>
 
